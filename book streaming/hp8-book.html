@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookCave</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?
+      family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!------------------ Header ------------------>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/EbookStore-Logo.png" width="30%" alt="EbookStore-Logo" />
+          </a>
+        </div>
+        <!----------  Nav Bar ------------------>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ebooks.html">Ebooks</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img
+            src="images/cart.png"
+            alt="Shoping Cart"
+            width="28px"
+            height="28px"
+            style="margin-left: 10px; margin-top: 15px"
+          />
+        </a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+    <div class="small-container single-product">
+      <div class="row">
+        <div class="col-2">
+          <img src="https://m.media-amazon.com/images/I/512duK+twWS._SX323_BO1,204,203,200_.jpg" alt="Book4" width="68%" />
+        </div>
+        <div class="col-2">
+          <p>Home / Ebook</p>
+          <h1>Harry Potter and the Cursed Child</h1>
+          <h2>by J.K.Rowling </h2>
+          <h2>Published Year - 2016</h2>
+          <a href="hp8.html" class="btn">Read Now</a>
+          <h3>Book Discription <i class="fa fa-indent"></i></h3>
+          <br />
+          <p>
+            It's been nineteen years since Harry Potter, Ron Weasley, and Hermione Granger saved the wizarding world, and now they're back on a most
+ extraordinary adventure, joined by a brave new generation that's only just arrived at Hogwarts School of Witchcraft and Wizardry. While
+Harry grapples with a past that refuses to stay where it belongs, his youngest son, Albus, struggles with the weight of a family legacy
+he never wanted. As past and present collide, both father and son are locked in a race through time as they battle mysterious forces,
+all while the future hangs in the balance.
+
+Based on an original story by J.K. Rowling, John Tiffany, and Jack Thorne, Harry Potter and the Cursed Child is the complete and unabridged
+ playscript of the award-winning West End production. This edition includes the final dialogue and stage directions of the original,
+two-part play, a conversation piece between director John Tiffany and playwright Jack Thorne, the Potter family tree, and a timeline of
+key events in the wizarding world leading up to Harry Potter and the Cursed Child.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <hr />
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images/harry.png" height="500px" class="offer-img" />
+          </div>
+          <div class="col-2">
+            <p>Available on BookCave</p>
+            <br />
+            <h2>The Harry Potter - Complete Collection</h2>
+            <h2>- J.K.Rowling</h3>- </h2>
+            <br />
+            <small>
+              Making Michael Arceneaux's I Don't Want to Die Poor required
+              reading in high schools across the country would help a lot of
+              young people think twice about the promise that going to college
+              at any cost is the only path to upward social mobility.
+            </small>
+            <a href="harry-potter.html" class="btn">Go Now </a>
+         </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------footer------------------- -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="images/Playstore.png" />
+              <img src="images/Applestore.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/EbookStore-Logo-footer.jpg" />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reiciendis, Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Youtube</li>
+              <li>Instagram</li>
+              <li>Twitterr</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2020 - EbookStore</p>
+      </div>
+    </div>
+    <!-- ---------Javascript for toggle menu------------- -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

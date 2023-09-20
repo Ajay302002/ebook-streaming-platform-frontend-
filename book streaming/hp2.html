@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookCave</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?
+      family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <a href="harry-potter.html" class="btn">Go Back &#x27F6;</a>
+    <center>
+      <h1 style="color: green">Harry Potter and the Chamber of Secrets</h1>
+      <h3>by J.K.Rowling</h3>
+    </center>
+
+
+  <div id="viewer" style="width: 100%; height: 500px;"></div>
+  <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+  <script>
+    const config = {
+      documentId: '3d195242-3ff1-4b52-a28e-30619a5c7a99',
+      darkMode: true,
+      token: '' //add your server side generated security token or change your document permission to public
+    };
+    CloudPDF(config, document.getElementById('viewer')).then((instance) => {
+
+    });
+  </script>
